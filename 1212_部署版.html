@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星辰泰国：AI 原生财税"合规主权"战略白皮书</title>
+    <style>
+        :root {
+            --bg-base: #030508;
+            --bg-card: #0a0d14;
+            --accent-primary: #388bfd;
+            --accent-danger: #f85149;
+            --accent-success: #3fb950;
+            --accent-warning: #d29922;
+            --text-main: #e6edf3;
+            --text-dim: #8b949e;
+            --border-glow: rgba(56, 139, 253, 0.15);
+        }
+
+        body, html {
+            margin: 0; padding: 0;
+            background: var(--bg-base);
+            color: var(--text-main);
+            font-family: "PingFang SC", "Segoe UI", sans-serif;
+            scroll-snap-type: y mandatory;
+            overflow-x: hidden;
+        }
+
+        section {
+            height: 100vh; width: 100vw;
+            scroll-snap-align: start;
+            display: flex; align-items: center; justify-content: center;
+            padding: 40px; box-sizing: border-box;
+        }
+
+        .slide-container {
+            width: 100%; max-width: 1200px;
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 24px;
+            padding: 4rem;
+            position: relative;
+            box-shadow: 0 40px 100px rgba(0,0,0,0.8);
+        }
+
+        .header-meta {
+            color: var(--accent-warning);
+            font-size: 0.8rem; letter-spacing: 0.3em;
+            text-transform: uppercase; margin-bottom: 1rem;
+            display: block; font-weight: bold;
+        }
+
+        h2 { font-size: 3rem; margin: 0 0 2rem 0; font-weight: 700; line-height: 1.1; }
+        h2 span { color: var(--accent-primary); }
+
+        .insight-grid {
+            display: grid; grid-template-columns: 1.2fr 1.8fr; gap: 40px;
+            margin-top: 2rem;
+        }
+
+        .pain-section {
+            background: rgba(248, 81, 73, 0.05);
+            border-radius: 16px; padding: 2rem;
+            border: 1px solid rgba(248, 81, 73, 0.15);
+        }
+
+        .pain-section h3 { color: var(--accent-danger); margin-top: 0; font-size: 1.2rem; }
+        .pain-list { list-style: none; padding: 0; }
+        .pain-list li { margin-bottom: 1.2rem; color: var(--text-dim); position: relative; padding-left: 20px; font-size: 0.95rem; line-height: 1.5; }
+        .pain-list li::before { content: '×'; position: absolute; left: 0; color: var(--accent-danger); font-weight: bold; }
+
+        .opportunity-section {
+            background: rgba(56, 139, 253, 0.05);
+            border-radius: 16px; padding: 2rem;
+            border: 1px solid rgba(56, 139, 253, 0.15);
+        }
+        .opportunity-section h3 { color: var(--accent-primary); margin-top: 0; font-size: 1.2rem; }
+        .feature-item { margin-bottom: 1.5rem; }
+        .feature-item strong { color: #fff; display: block; margin-bottom: 5px; }
+        .feature-item p { margin: 0; font-size: 0.95rem; color: var(--text-dim); line-height: 1.6; }
+
+        .footer-kpis {
+            display: flex; gap: 40px; margin-top: 3rem;
+            border-top: 1px solid rgba(255,255,255,0.05); padding-top: 2rem;
+        }
+        .kpi { flex: 1; }
+        .kpi-val { font-size: 1.8rem; font-weight: 800; color: #fff; display: block; }
+        .kpi-lab { font-size: 0.7rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1px; }
+
+        .nav-dots {
+            position: fixed; right: 30px; top: 50%; transform: translateY(-50%);
+            display: flex; flex-direction: column; gap: 15px; z-index: 100;
+        }
+        .dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.1); transition: 0.3s; cursor: pointer; }
+        .dot.active { background: var(--accent-primary); transform: scale(1.4); box-shadow: 0 0 10px var(--accent-primary); }
+
+        .highlight-text { color: var(--accent-success); font-weight: bold; }
+
+        @media (max-width: 768px) {
+            section { padding: 20px; }
+            .slide-container { padding: 2rem; }
+            h2 { font-size: 1.8rem; }
+            .insight-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-dots">
+        <div class="dot active"></div><div class="dot"></div><div class="dot"></div>
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    </div>
+
+    <section>
+        <div class="slide-container">
+            <span class="header-meta">01 / MARKET DYNAMICS</span>
+            <h2>合规窗口期：<span>从"成本支出"跃迁为"避税利器"</span></h2>
+            <div class="insight-grid">
+                <div class="pain-section">
+                    <h3>洞察：数字化强迫的终局</h3>
+                    <ul class="pain-list">
+                        <li><strong>强制化倒计时：</strong> 电子发票虽未强制，但 2-3 年内必转刚需，错过窗口期意味着未来合规成本将呈指数级上涨。</li>
+                        <li><strong>税筹盲区：</strong> 小微企业普遍将软件视为成本，忽视了"手工记账"带来的高额审计补税风险。</li>
+                    </ul>
+                </div>
+                <div class="opportunity-section">
+                    <h3>爽点：国家买单的转型</h3>
+                    <div class="feature-item">
+                        <strong>200% 费用加计扣除</strong>
+                        <p>SME 购买软件可享 <span class="highlight-text">200% 税前扣除</span>，将软件采购费用的双倍在税单上抵扣，最高额度达 30 万泰铢。</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>最高 13 年免税期</strong>
+                        <p>通过合规系统积累数据，协助企业申请 BOI 认证，最高锁定 <span class="highlight-text">8-13 年</span> 企业所得税全免。</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section>
+        <div class="slide-container">
+            <span class="header-meta">02 / VAT CASH FLOW INSIGHT</span>
+            <h2>VAT PP.30：<span>被"现金流时差"卡死的生命线</span></h2>
+            <div class="insight-grid">
+                <div class="pain-section">
+                    <h3>洞察：致命的垫资风险</h3>
+                    <ul class="pain-list">
+                        <li><strong>销售货物（发货即税）：</strong> 货发出即便没收到钱也必须开票并向国家预缴 7% VAT，极大蚕食小微企业现金流。</li>
+                        <li><strong>提供服务（合规死锁）：</strong> 客户坚持见票才付款，但税法严禁收款前开票。老板陷入"不开票不回款，开票即违法"的死循环。</li>
+                    </ul>
+                </div>
+                <div class="opportunity-section">
+                    <h3>爽点：合规与回款的"实时同步"</h3>
+                    <div class="feature-item">
+                        <strong>E-filing 8 天账期红利</strong>
+                        <p>放弃纸质申报，通过电子系统获取 <span class="highlight-text">额外的 8 天</span> 宽限，极大缓解月底现金流调拨压力。</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>自动化纳税义务判定</strong>
+                        <p>系统按货/服分类，精准锁定"发货即入账"与"收款才入账"节点，杜绝任何提前垫税或违规开票。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="slide-container">
+            <span class="header-meta">03 / WHT ASSET STRATEGY</span>
+            <h2>预扣税：<span>50 Tawi 是丢在路上的"现金凭证"</span></h2>
+            <div class="insight-grid">
+                <div class="pain-section">
+                    <h3>洞察：一张纸的"面值"流失</h3>
+                    <ul class="pain-list">
+                        <li><strong>资产证书丢失：</strong> 50 Tawi 是收款方年底抵税的唯一凭证。丢一张纸，就等于直接丢掉了一笔已经交给国家的预缴现金。</li>
+                        <li><strong>13 位税号黑洞：</strong> 1,000 铢起征引发海量手工单据。写错一位税号即视为凭证无效，资产瞬间归零。</li>
+                    </ul>
+                </div>
+                <div class="opportunity-section">
+                    <h3>爽点：税率直降 1% 的"抢钱"功能</h3>
+                    <div class="feature-item">
+                        <strong>e-Withholding Tax 自动代扣</strong>
+                        <p>使用银行直连代扣，税率由 3% <span class="highlight-text">直降至 2%</span>。且额外享受 200% 的税前扣除。</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>支付即开证</strong>
+                        <p>在转账瞬间自动生成电子 50 Tawi 并分发，流转成本归零，资产 100% 自动对账。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="slide-container">
+            <span class="header-meta">04 / CIT RISK MANAGEMENT</span>
+            <h2>所得税：<span>规避 25% 预估误差的"经营对赌"</span></h2>
+            <div class="insight-grid">
+                <div class="pain-section">
+                    <h3>洞察：盲目飞行的财务风险</h3>
+                    <ul class="pain-list">
+                        <li><strong>PND 51 盲猜罚款：</strong> 年中必须预估全年利润。若预估偏差 > <span style="color:#fff">25%</span> 且无合理解释，面临 20% 的附加费重罚。</li>
+                        <li><strong>汇算清缴脱节：</strong> 缺乏实时看板，老板在年底决算前，完全不知道利润阶梯处于哪一级。</li>
+                    </ul>
+                </div>
+                <div class="opportunity-section">
+                    <h3>爽点：阶梯税率的"动态导航"</h3>
+                    <div class="feature-item">
+                        <strong>25% 风险熔断提醒</strong>
+                        <p>AI 实时根据历史票据数据动态预测全年利润，在接近 25% 偏差红线时自动推送预警。</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>SME 阶梯优惠预演</strong>
+                        <p>自动计算 0-30万（免税）、30-300万（15%）的最优税务分界点，协助企业主在合法范围内避开最高税率档。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="slide-container">
+            <span class="header-meta">05 / E-TAX INNOVATION</span>
+            <h2>电子发票：<span>带"电子戳"的终极信誉背书</span></h2>
+            <div class="insight-grid">
+                <div class="pain-section">
+                    <h3>洞察：低效的"人工抄送"劳动</h3>
+                    <ul class="pain-list">
+                        <li><strong>无止尽的 CC 抄送：</strong> 依赖会计手动将 PDF 抄送税局邮箱以获取 Timestamp（时间戳），操作繁琐且极易漏发。</li>
+                        <li><strong>客户流失风险：</strong> 只有 e-Tax 商家能让消费者抵扣个税。无法开票的商户将面临大客户的加速流失。</li>
+                    </ul>
+                </div>
+                <div class="opportunity-section">
+                    <h3>爽点：自动化"盖戳"引擎</h3>
+                    <div class="feature-item">
+                        <strong>e-Tax Invoice by Email 自动闭环</strong>
+                        <p>系统自动发送并获取"电子戳"PDF 归档。将单次合规成本降至 <span class="highlight-text">0 秒</span>。</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>XML/PDF 并行架构</strong>
+                        <p>数字签名确保日期不可倒填。不仅给人看 PDF，更给机器读 XML，直接对接事务所审计包。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="slide-container" style="text-align: center;">
+            <span class="header-meta">06 / STRATEGIC CONCLUSION</span>
+            <h2>终结记账文明：<span>让合规消隐在业务脉搏中</span></h2>
+            <p style="color: var(--text-dim); margin-bottom: 3rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                星辰泰国包的核心价值是构建一套覆盖全税种的<strong>"自动化合规主权系统"</strong>。在业务发生的瞬间，全方位的财税合规即告完成。
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; text-align: left;">
+                <div style="background:rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border-glow);">
+                    <h4 style="color: var(--accent-primary); margin-top: 0;">增值税发票</h4>
+                    <p style="font-size: 0.85rem; margin: 0; line-height: 1.6;">发货/收款自动匹配，实时锁定 VAT 入账时点，系统化规避早报或漏报审计风险。</p>
+                </div>
+                <div style="background:rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border-glow);">
+                    <h4 style="color: var(--accent-warning); margin-top: 0;">WHT 预扣税</h4>
+                    <p style="font-size: 0.85rem; margin: 0; line-height: 1.6;">支付即扣缴，自动生成电子 50 Tawi 凭证并分发。支持 e-WHT 银行直连，资产 100% 自动对账。</p>
+                </div>
+                <div style="background:rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border-glow);">
+                    <h4 style="color: var(--accent-success); margin-top: 0;">企业所得税</h4>
+                    <p style="font-size: 0.85rem; margin: 0; line-height: 1.6;">动态导航 PND 51 年中预估红线，自动计算 SME 阶梯税率分界点，规避 25% 预估误差罚款。</p>
+                </div>
+                <div style="background:rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border-glow);">
+                    <h4 style="color: #fff; margin-top: 0;">合规健康报告</h4>
+                    <p style="font-size: 0.85rem; margin: 0; line-height: 1.6;">"业务-税务-财务"全链路审计检测。自动归集"电子戳"及抵税凭证，随时应对税局稽查。</p>
+                </div>
+            </div>
+
+            <p style="margin-top: 6rem; font-size: 0.8rem; color: var(--text-dim); opacity: 0.5;">
+                — 星辰产品出海泰国包 · 研发战略建议书 (2026.03) —
+            </p>
+        </div>
+    </section>
+
+    <script>
+        const sections = document.querySelectorAll('section');
+        const dots = document.querySelectorAll('.dot');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const idx = Array.from(sections).indexOf(entry.target);
+                    dots.forEach((dot, i) => dot.classList.toggle('active', i === idx));
+                }
+            });
+        }, { threshold: 0.6 });
+
+        sections.forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
